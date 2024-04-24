@@ -5,10 +5,11 @@ export default defineConfig({
   title: "廢文集散地",
   description: "A VitePress Site",
   head: [
-    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "https://i.imgur.com/WaCAi3N.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "https://i.imgur.com/dNGjpDy.png"}],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: 'https://i.imgur.com/ZogyxWx.png',
     nav: [
       { text: '首頁', link: '/' },
       { text: '關於作者', link: '/posts/author/index' },
