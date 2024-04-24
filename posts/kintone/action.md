@@ -1,4 +1,7 @@
 ---
+title: 透過 Github Actions 部署至 Kintone
+date: 2024-04-24
+tag: Kintone
 outline: deep
 ---
 

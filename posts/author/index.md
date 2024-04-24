@@ -26,7 +26,7 @@ const members = [
       關於作者
     </template>
     <template #lead>
-      Hi，我是 Daniel。<br>
+      Hi，我是 Daniel，<br>
       我的自介到此結束，謝謝大家。
     </template>
   </VPTeamPageTitle>

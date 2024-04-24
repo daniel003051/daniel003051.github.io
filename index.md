@@ -9,7 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 查看文章
-      link: /posts/kintone/action
+      link: /posts/
+    - theme: alt
+      text: 關於作者
+      link: /posts/author/
 
 features:
   - title: 尊重
