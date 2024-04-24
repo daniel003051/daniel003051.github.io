@@ -1,10 +1,11 @@
 ---
 layout: doc
+prev: false
+next: false
 ---
 
 <script setup>
 import { data as posts } from './posts.data.js'
-console.log(posts)
 </script>
 
 <h1>所有文章</h1>

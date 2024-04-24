@@ -14,7 +14,10 @@ export default defineConfig({
       { text: '首頁', link: '/' },
       { text: '關於作者', link: '/posts/author/index' },
     ],
-
+    footer: {
+      message: '',
+      copyright: 'Copyright © 2024 Daniel'
+    },
     sidebar: [
       {
         text: 'Kintone',
@@ -24,9 +27,11 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/daniel003051' }
-    ]
+    ],
+    search: {
+      provider: 'local'
+    }
   }
 })
