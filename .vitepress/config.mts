@@ -24,6 +24,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '透過 Github Actions 部署至 Kintone', link: '/posts/kintone/action.md' },
+          { text: '發送 request 至 kintone 時的身份驗證', link: '/posts/kintone/request.md' },
         ]
       }
     ],
