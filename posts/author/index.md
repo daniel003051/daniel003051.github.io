@@ -16,6 +16,14 @@ const members = [
     links: [
       { icon: 'github', link: 'https://github.com/daniel003051' }
     ]
+  },
+  {
+    avatar: 'https://avatars.githubusercontent.com/u/167491656?v=4',
+    name: 'Kaya',
+    title: '有夢最美，沒夢更好睡',
+    links: [
+      { icon: 'github', link: 'https://github.com/kaya-chiu' }
+    ]
   }
 ]
 </script>
@@ -23,12 +31,12 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      關於作者
+      渺小的作者們
     </template>
-    <template #lead>
+    <!-- <template #lead>
       Hi，我是 Daniel，<br>
       我的自介到此結束，謝謝大家。
-    </template>
+    </template> -->
   </VPTeamPageTitle>
   <VPTeamMembers
     :members="members"

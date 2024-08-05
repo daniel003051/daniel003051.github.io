@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "廢文集散地",
+  title: "kintone台灣第一個家",
   description: "A VitePress Site",
   head: [
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "https://i.imgur.com/dNGjpDy.png"}],
@@ -20,10 +20,10 @@ export default defineConfig({
     },
     sidebar: [
       {
-        text: 'Kintone',
+        text: 'kintone',
         collapsed: false,
         items: [
-          { text: '透過 Github Actions 部署至 Kintone', link: '/posts/kintone/action.md' },
+          { text: '透過 Github Actions 部署至 kintone', link: '/posts/kintone/action.md' },
           { text: '發送 request 至 kintone 時的身份驗證', link: '/posts/kintone/request.md' },
         ]
       }
