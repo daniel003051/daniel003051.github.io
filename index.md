@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "廢文集散地"
+  name: "kintone台灣第一個家"
   text: "尊重！包容！友善！"
-  tagline: "撰寫 開發、Kintone、以及各式廢文"
+  tagline: "撰寫 開發、kintone，輕鬆愉快，阿嬤也學得會"
   actions:
     - theme: brand
       text: 查看文章
