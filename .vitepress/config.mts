@@ -7,6 +7,8 @@ export default defineConfig({
   head: [
     ['link', { rel: "icon", type: "image/png", sizes: "16x16", href: "https://i.imgur.com/dNGjpDy.png"}],
     ['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-Z1N4RC0ZRD'}],
+    ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-Z1N4RC0ZRD');",
+    ],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
