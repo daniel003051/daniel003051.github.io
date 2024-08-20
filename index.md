@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "kintone台灣第一個家"
+  name: "kintone開發者筆記"
   text: "尊重！包容！友善！"
-  tagline: "撰寫 開發、kintone，輕鬆愉快，阿嬤也學得會"
+  tagline: "入門即大師，一起撰寫、開發 kintone"
   actions:
     - theme: brand
       text: 查看文章

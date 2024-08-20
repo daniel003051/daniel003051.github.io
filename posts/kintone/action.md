@@ -1,7 +1,7 @@
 ---
-title: 透過 Github Actions 部署至 Kintone
+title: 透過 Github Actions 部署至 kintone
 date: 2024-04-24
-tag: Kintone
+tag: kintone
 outline: deep
 ---
 
@@ -9,11 +9,11 @@ outline: deep
 
 --- 
 
-# 透過 Github Actions 部署至 Kintone
+# 透過 Github Actions 部署至 kintone
 
 在軟體開發中使用版本控制及自動部署，除了可以方便團隊協作外、也能減去手動部署的繁瑣步驟和時間。
 
-因此這篇文章會使用 [@kintone/customize-uploader](https://www.npmjs.com/package/@kintone/customize-uploader) 以及 `Github Actions` 來達成 git push 後自動部署至 Kintone 的功能，接下來的範例會以 [Vite](https://vitejs.dev/) 作為示範。
+因此這篇文章會使用 [@kintone/customize-uploader](https://www.npmjs.com/package/@kintone/customize-uploader) 以及 `Github Actions` 來達成 git push 後自動部署至 kintone 的功能，接下來的範例會以 [Vite](https://vitejs.dev/) 作為示範。
 
 ## 建立 Vite 環境
 
@@ -117,7 +117,7 @@ export default defineConfig({
 import { createApp } from 'vue'
 import App from './App.vue'
 
-kintone.events.on('app.record.index.show', (event: KintoneEvent) => {
+kintone.events.on('app.record.index.show', (event: kintoneEvent) => {
   const element = kintone.app.getHeaderMenuSpaceElement()!
   createApp(App).mount(element)
   return event
@@ -149,7 +149,7 @@ kintone.events.on('app.record.index.show', (event: KintoneEvent) => {
 > 也可以選擇直接將此檔案寫到開發資料夾的 `.github/workflows/main.yml`
 
 ```yml
-name: Deploy to Kintone
+name: Deploy to kintone
 on:
   push:
     branches:
@@ -167,13 +167,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Kintone uploader
+      - name: Install kintone uploader
         run: npm install -g @kintone/customize-uploader
 
       - name: Build files
         run: npm install && npm run build
     
-      - name: Execute Kintone Deployment
+      - name: Execute kintone Deployment
         run: |
           kintone-customize-uploader --base-url ${{ secrets.KINTONE_BASE_URL }} --username ${{ secrets.KINTONE_USERNAME }} --password ${{ secrets.KINTONE_PASSWORD }} manifest.json
 ```
@@ -182,7 +182,7 @@ jobs:
 
 ![](https://i.imgur.com/Rfw8jGr.png)
 
-成功部署的話會出現綠色勾勾，這時候如果回到 Kintone 裡面看的話，就可以看到剛剛開發的內容了。記得 CSS 要改一下，不然會跑版。
+成功部署的話會出現綠色勾勾，這時候如果回到 kintone 裡面看的話，就可以看到剛剛開發的內容了。記得 CSS 要改一下，不然會跑版。
 
 ![](https://i.imgur.com/6uHk5qZ.png)
 
