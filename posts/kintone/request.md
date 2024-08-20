@@ -1,7 +1,7 @@
 ---
 title: 發送 request 至 kintone 時的身份驗證
 date: 2024-06-20
-tag: Kintone
+tag: kintone
 outline: deep
 ---
 

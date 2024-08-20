@@ -31,12 +31,11 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      渺小的作者們
+      關於作者
     </template>
-    <!-- <template #lead>
-      Hi，我是 Daniel，<br>
-      我的自介到此結束，謝謝大家。
-    </template> -->
+    <template #lead>
+      丹尼爾大師與他的小夥伴
+    </template>
   </VPTeamPageTitle>
   <VPTeamMembers
     :members="members"
