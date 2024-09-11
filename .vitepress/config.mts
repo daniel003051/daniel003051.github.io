@@ -29,6 +29,7 @@ export default defineConfig({
           { text: '透過 Github Actions 部署至 kintone', link: '/posts/kintone/action.md' },
           { text: '發送 request 至 kintone 時的身份驗證', link: '/posts/kintone/request.md' },
           { text: '在 kintone 應用程式間複製附件檔案', link: '/posts/kintone/copy-files.md' },
+          { text: '客製化範例：在清單畫面選擇多筆記錄', link: '/posts/kintone/list-view-multi-select.md' },
         ]
       }
     ],
